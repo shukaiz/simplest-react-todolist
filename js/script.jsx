@@ -137,7 +137,7 @@ var TodoItem = React.createClass({
 var TodoFooter = React.createClass({
   render: function() {
     return (
-      <li className="list-group-item">{this.props.todoCompleteCount}已完成 / {this.props.todoCount}总数</li>
+      <li className="list-group-item">{this.props.todoCompleteCount} Completed / {this.props.todoCount} Total</li>
     )
   }
 });
@@ -161,12 +161,12 @@ var TodoForm = React.createClass({
           <div className="form-group">
             <label for="task" className="col-md-2 control-label">Task</label>
             <div className="col-md-10">
-              <input type="text" id="task" ref="task" className="form-control" placeholder="你想做点什么"></input>
+              <input type="text" id="task" ref="task" className="form-control" placeholder="What's next?"></input>
             </div>
           </div>
           <div className="row">
             <div className="col-md-12 text-right">
-              <input type="submit" value="Save Task" className="btn btn-primary" />
+              <input type="submit" value="Add Task" className="btn btn-primary" />
             </div>
           </div>
         </form>
