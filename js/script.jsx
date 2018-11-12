@@ -127,7 +127,7 @@ var TodoItem = React.createClass({
         <input type="checkbox" checked={itemChecked} onChange={this.toggleComplete} className="pull-left" />
         {task}
         <div className="pull-right">
-          <button type="button" className="btn btn-xs close" onClick={this.deleteTask} ref="deleteBtn">删除</button>
+          <button type="button" className="btn btn-xs close" onClick={this.deleteTask} ref="deleteBtn">Delete</button>
         </div>
       </li>
     );
